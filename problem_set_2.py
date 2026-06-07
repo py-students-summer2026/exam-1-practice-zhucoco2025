@@ -38,9 +38,9 @@ def weather_helper():
         return
 
     if temperature < 40:
-        snowing = input("Is it snowing? ").strip().lower()
+        snow = input("Is it snowing? ").strip().lower()
 
-        if snowing == "yes" or snowing == "yeah" or snowing == "yup":
+        if snow == "yes" or snow == "yeah" or snow == "yup":
             jacket = input("Are you wearing a warm jacket? ").strip().lower()
 
             if jacket == "yes" or jacket == "yeah" or jacket == "yup":
@@ -49,12 +49,12 @@ def weather_helper():
                 print("What were you thinking when you left home today?!")
 
         else:
-            raining = input("Is it raining? ").strip().lower()
+            rain = input("Is it raining? ").strip().lower()
 
-            if raining == "yes" or raining == "yeah" or raining == "yup":
-                umbrella = input("Do you have an umbrella? ").strip().lower()
+            if rain == "yes" or rain == "yeah" or rain == "yup":
+                umb = input("Do you have an umbrella? ").strip().lower()
 
-                if umbrella == "yes" or umbrella == "yeah" or umbrella == "yup":
+                if umb == "yes" or umb == "yeah" or umb == "yup":
                     print("Good job staying dry!")
                 else:
                     print("You must enjoy getting wet!")
